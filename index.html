@@ -3,8 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Ryan Ching - Developer / Designer</title>
-    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js'></script>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/overrides.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"  media="screen,projection"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="javascript/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
   </head>
   <body>
 
@@ -36,7 +44,7 @@
         <div class='card-panel fade hoverable scrollspy' id='intro-card'>
           <div class='row valign-wrapper'>
             <div class='col s12 m5 l5'>
-              <%= image_tag 'me.jpg', class: 'responsive-img circle' %>
+              <img src='images/me.jpg' class='responsive-img circle'/>
             </div>
             <div class='col s12 m7 l7 hide-on-small-only'>
               <div class='flow-text left-marg'>
@@ -95,7 +103,7 @@
     <!-- Sky Dive! -->
 
     <div class='parallax-container'>
-      <div class='parallax'><img src='http://i.imgur.com/5cJthHd.jpg'/></div>
+      <div class='parallax'><img src='images/parallax.jpg'/></div>
     </div>
 
     <!-- About Me -->
@@ -113,7 +121,7 @@
           <div class='col s12 m6 l6'>
             <div class='card fade hoverable'>
               <div class='card-image waves-effect waves-block waves-light'>
-                <img class='activator' src='http://i.imgur.com/ZGSGH0D.jpg'/>
+                <img class='activator' src='images/dev.jpg'/>
               </div>
               <div class='card-content'>
                 <span class='card-title dark-text activator'>Web Development
@@ -135,7 +143,7 @@
           <div class='col s12 m6 l6'>
             <div class='card fade hoverable'>
               <div class='card-image waves-effect waves-block waves-light'>
-                <img class='activator' src='http://i.imgur.com/CItsqFT.jpg'/>
+                <img class='activator' src='images/design.jpg'/>
               </div>
               <div class='card-content'>
                 <span class='card-title dark-text activator'>Interaction Design
@@ -161,7 +169,7 @@
           <div class='col s12 m6 l6'>
             <div class='card fade hoverable'>
               <div class='card-image waves-effect waves-block waves-light'>
-                <img class='activator' src='http://i.imgur.com/LtuP1Nk.jpg'/>
+                <img class='activator' src='images/music.jpg'/>
               </div>
               <div class='card-content'>
                 <span class='card-title dark-text activator'>Music
@@ -312,7 +320,7 @@
       <div class='container'>
         <h3 class='header weight-200 myteal-text center-align'>Featured Projects</h3>
 
-        <div class='row'>
+        <div class='row fade'>
 
           <div class='col s12'>
             <ul class='tabs myteal-text'>
@@ -370,28 +378,30 @@
 
           <div id='siren'>
             <div class='row'>
-              <div class='col s12 m4 l4 right'>
-                <iframe src='//www.youtube.com/embed/Q8TXgCzxEnw?rel=0' frameborder='0' allowfullscreen></iframe>
+              <div class='col s12 m7 l7 right'>
+                <video class='responsive-video' controls style='margin-top: 34px;'>
+                  <source src="videos/siren.mp4" type="video/mp4">
+                </video>
               </div>
-              <p class='col s12 m4 l4'>
+              <p class='col s12 m5 l5'>
                 <p><h4 class='weight-300 dark-text'>Siren</h4></p>
               </p>
             </div>
-            <div class='row'>
+            <div class='row' style='margin-top: 50px;'>
               <div class='col s2 offset-s1 '>
-                <img src='http://i.imgur.com/QwpoukV.jpg' class='materialboxed responsive-img'/>
+                <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/9285900_orig.jpg' class='materialboxed responsive-img'/>
               </div>
               <div class='col s2'>
-                <img src='http://i.imgur.com/Ilyd53a.jpg' class='materialboxed responsive-img'/>
+                <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/8892824.jpg?763' class='materialboxed responsive-img'/>
               </div>
               <div class='col s2'>
-                <img src='http://i.imgur.com/p0WXBRV.jpg' class='materialboxed responsive-img'/>
+                <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/5013007_orig.jpg' class='materialboxed responsive-img'/>
               </div>
               <div class='col s2'>
-                <img src='http://i.imgur.com/E7WgBUf.jpg' class='materialboxed responsive-img'/>
+                <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/6618143_orig.jpg' class='materialboxed responsive-img'/>
               </div>
               <div class='col s2'>
-                <img src='http://i.imgur.com/0URm7oV.jpg' class='materialboxed responsive-img'/>
+                <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/1895306_orig.jpg' class='materialboxed responsive-img'/>
               </div>
             </div>
           </div>
@@ -410,31 +420,31 @@
         <div class='row scrollspy' id='photos'>
           <div class='col 12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Sunset at Seattle, Washington'
-            src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='Cool rocks bro - Red Rock Canyon, Nevada'
+            src='images/photo1.JPG'/>
           </div>
           <div class='col s12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Test' src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='$20 million gaming tournament - Key Arena, Seattle ' src='images/photo2.JPG'/>
           </div>
           <div class='col s12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Test' src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='Famous fried pork chop place - Tokyo, Japan' src='images/photo3.JPG'/>
           </div>
         </div>
 
         <div class='row'>
           <div class='col s12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Test' src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='Medival castle - Kyoto, Japan' src='images/photo4.JPG'/>
           </div>
           <div class='col s12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Test' src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='Korean fried chicken!! - Dae Ji, Vancouver' src='images/photo5.JPG'/>
           </div>
           <div class='col s12 m4 l4'>
             <img class='materialboxed z-depth-1 photo-fade responsive-img'
-            data-caption='Test' src='http://i.imgur.com/nKzTPaS.jpg'/>
+            data-caption='Harry Potter theme park :) - Osaka, Japan' src='images/photo6.JPG'/>
           </div>
         </div>
 
@@ -449,7 +459,7 @@
           Get in touch with me!
         </h5>
         <p class='flow-text'>
-          <strong><u><a class='myteal-text' href='mailto:ryankching29@gmail.com' >
+          <strong><u><a class='myteal-text' href='mailto:ryankching29@gmail.com'>
             ryankching29@gmail.com
           </a></u></strong>
         </p>
