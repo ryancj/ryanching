@@ -39,7 +39,7 @@ nav ul li:hover {
 }
 
 .myteal {
-  background-color: #00b7af;
+  background-color: #00b7af !important;
 }
 
 .light-teal-text{
@@ -47,7 +47,7 @@ nav ul li:hover {
 }
 
 .light-teal {
-  background-color: #9bd8d9;
+  background-color: #9bd8d9 !important;
 }
 
 .cream-text {
@@ -90,11 +90,11 @@ nav ul li:hover {
 }
 
 .tabs .tab a:hover {
-    color: #dadad2;
+  color: #dadad2;
 }
 
 .tabs .tab a {
-    color: #5c5d5f;
+  color: #5c5d5f;
 }
 
 .tabs .indicator {
