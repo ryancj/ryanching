@@ -3,9 +3,6 @@ $(function() {
   //Scrolling effect
   $('.scrollspy').scrollSpy();
 
-  //Side nav for mobile
-  $(".button-collapse").sideNav();
-
   //Image effect
   $('.materialboxed').materialbox();
 
@@ -22,5 +19,8 @@ $(function() {
   sr.reveal('.stag-list', { duration: 1000, distance:'20px', scale: 1 }, 100);
   sr.reveal('.photo-fade', { duration: 800, distance:'20px', scale: 1 }, 40);
   sr.reveal('.fade', { duration: 700, distance:'20px', scale: 1 });
+
+  //Side nav for mobile
+  $(".button-collapse").sideNav();
 
 });
