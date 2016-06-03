@@ -18,7 +18,7 @@
 
     <!-- Navbar -->
 
-    <div class='navbar-fixed'>
+    <div class='navbar-fixed' id='top'>
       <nav class='white scrollspy'>
         <div class='container'>
           <div class='brand-logo'>
@@ -35,7 +35,7 @@
           </ul>
 
           <ul id="slide-out" class="side-nav">
-            <li><a href="#intro-card">Top</a></li>
+            <li><a href="#top">Top</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -55,13 +55,13 @@
     <div class='section pattern'>
       <div class='container'>
 
-        <div class='card-panel fade hoverable scrollspy' id='intro-card'>
+        <div class='card-panel fade hide-on-small-only hoverable scrollspy' id='intro-card'>
           <div class='row valign-wrapper'>
             <div class='col s12 m5 l5'>
               <img src='images/me.jpg' class='responsive-img circle'/>
             </div>
-            <div class='col s12 m7 l7 hide-on-small-only'>
-              <div class='flow-text left-marg'>
+            <div class='col s12 m7 l9'>
+              <div class='flow-text'>
                 <h2 class='myteal-text' style='margin-bottom: 0px;'>
                   <span class='weight-200'>Hello, I'm </span>
                   Ryan Ching
@@ -75,22 +75,6 @@
                   Enjoy! <i class="fa fa-smile-o" aria-hidden="true"></i>
                 </p>
               </div>
-            </div>
-          </div>
-
-          <div class='col s12 m7 l7 align-center hide-on-med-and-up'>
-            <div class='flow-text left-marg'>
-              <h2 style='margin-bottom: 3px;'>
-                Hello, I'm <strong class='blue-text'>Ryan Ching</strong>
-              </h2>
-              <h5 style='margin-top: 3px;'>
-                Full Stack Developer / Interaction Designer
-              </h5>
-              <p class='grey-text text-darken-4'>
-                Hi internet person, or the awesome person that I directed here.
-                Listed are my interests, hobbies, and everything in between.
-                Enjoy!
-              </p>
             </div>
           </div>
 
@@ -111,13 +95,56 @@
           </div>
         </div>
 
+    <!-- Mobile Card -->
+
+    <div class='card-panel fade hide-on-med-and-up hoverable scrollspy' style='padding: 25px;'>
+      <div class='row   '>
+        <div class='col s12 m5 l5'>
+          <img src='images/me.jpg' class='responsive-img circle'/>
+        </div>
+        <div class='col s12 m7 l9'>
+          <div class='flow-text'>
+            <h2 class='myteal-text center' style='margin-bottom: 0px;'>
+              Ryan Ching
+            </h2>
+            <h5 class='light-teal-text center weight-200' style='margin-top: 0px;'>
+              Developer / Designer
+            </h5>
+            <p class='dark-text'>
+              Hi internet person, or the awesome person that I directed here.
+              Listed are my interests, hobbies, and everything in between.
+              Enjoy! <i class="fa fa-smile-o" aria-hidden="true"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class='row card-action' style='margin-bottom: 0px;'>
+        <div class='col s4 center-align'>
+          <a class='fa fa-linkedin fa-2x cream-text'
+              href='http://linkedin.com/in/ryching'></a>
+        </div>
+        <div class='col s4 center-align'>
+          <a class='fa fa-github-alt fa-2x cream-text'
+           onclick="Materialize.toast('*meow*', 4000, 'rounded')"
+              href='https://github.com/ryancj'></a>
+        </div>
+        <div class='col s4 center-align'>
+          <a class='fa fa-angellist fa-2x cream-text'
+              href='https://angel.co/ryankc'></a>
+        </div>
+      </div>
+    </div>
+
       </div>
     </div>
 
     <!-- Sky Dive! -->
 
-    <div class='parallax-container'>
-      <div class='parallax'><img src='images/parallax.jpg'/></div>
+    <div class='hide-on-small-only'>
+      <div class='parallax-container'>
+        <div class='parallax'><img src='images/parallax.jpg'/></div>
+      </div>
     </div>
 
     <!-- About Me -->
@@ -347,17 +374,17 @@
             <div class='row'>
               <img class='col s12 m8 l8 right responsive-img' src='http://i.imgur.com/J4OoXGC.jpg'/>
               <p class='col s12 m4 l4'>
-                <p><h4 class='weight-300 dark-text'>Code Stamps</h4></p>
+                <p><h4 class='weight-300 dark-text' style='margin-left: 5px;'>Code Stamps</h4></p>
               </p>
             </div>
             <div class='row'>
-              <div class='col s2 offset-s3 '>
+              <div class='col l2 offset-l3 m2 offset-m3 s4'>
                 <img src='http://i.imgur.com/mjrNqIW.jpg' class='materialboxed responsive-img' data-caption='Test'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/37021lG.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/EJdxsLc.jpg' class='materialboxed responsive-img'/>
               </div>
             </div>
@@ -367,23 +394,23 @@
             <div class='row'>
               <img class='col s12 m8 l8 right responsive-img' src='http://i.imgur.com/564uKcg.jpg'/>
               <p class='col s12 m4 l4'>
-                <p><h4 class='weight-300 dark-text'>Codrlogue</h4></p>
+                <p><h4 class='weight-300 dark-text' style='margin-left: 5px;'>Codrlogue</h4></p>
               </p>
             </div>
             <div class='row'>
-              <div class='col s2 offset-s1 '>
+              <div class='col l2 offset-l1 m2 offset-m1 s4'>
                 <img src='http://i.imgur.com/QwpoukV.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/Ilyd53a.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/p0WXBRV.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/E7WgBUf.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://i.imgur.com/0URm7oV.jpg' class='materialboxed responsive-img'/>
               </div>
             </div>
@@ -397,23 +424,23 @@
                 </video>
               </div>
               <p class='col s12 m5 l5'>
-                <p><h4 class='weight-300 dark-text'>Siren</h4></p>
+                <p><h4 class='weight-300 dark-text' style='margin-left: 5px;'>Siren</h4></p>
               </p>
             </div>
             <div class='row' style='margin-top: 50px;'>
-              <div class='col s2 offset-s1 '>
+              <div class='col l2 offset-l1 m2 offset-m1 s4'>
                 <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/9285900_orig.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/8892824.jpg?763' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/5013007_orig.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4'>
                 <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/6618143_orig.jpg' class='materialboxed responsive-img'/>
               </div>
-              <div class='col s2'>
+              <div class='col l2 m2 s4' style='margin-top: 20px;'>
                 <img src='http://siren337.weebly.com/uploads/1/9/5/4/19541579/1895306_orig.jpg' class='materialboxed responsive-img'/>
               </div>
             </div>
