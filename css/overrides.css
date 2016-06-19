@@ -105,6 +105,10 @@ nav ul li:hover {
   font-size: 16px !important;
 }
 
+.image-fix {
+  margin-top: 25px;
+}
+
 iframe, object, embed {
   max-width: 100%;
 }
