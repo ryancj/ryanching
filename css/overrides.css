@@ -112,3 +112,7 @@ nav ul li:hover {
 iframe, object, embed {
   max-width: 100%;
 }
+
+.side-nav {
+  width: 150px;
+}
