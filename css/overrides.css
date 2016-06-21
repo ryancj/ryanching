@@ -18,7 +18,7 @@ nav ul li:hover {
 
 .pattern {
   background-image:
-  url(images/pattern.png);
+  url('../images/pattern.png');
 }
 
 .fa:hover {
@@ -114,5 +114,5 @@ iframe, object, embed {
 }
 
 .side-nav {
-  width: 150px;
+  width: 180px;
 }
